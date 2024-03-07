@@ -22,43 +22,43 @@ TODO: 直接實作 pojt_tlt(), tlt_pojt()。目前先透過前六个來進行間
 
 from POJ_TL import poj_tl
 
-pojt = poj_tl('oaiⁿ oáiⁿ oàiⁿ oaihⁿ oâiⁿ oǎiⁿ oāiⁿ oa̍ihⁿ oăiⁿ')
 # POJ調號式 轉做 POJ數字式: pojt_pojs()
+pojt = poj_tl('oaiⁿ oáiⁿ oàiⁿ oaihⁿ oâiⁿ oǎiⁿ oāiⁿ oa̍ihⁿ oăiⁿ')
 print(pojt.pojt_pojs())
 # =>    oaiN oaiN2 oaiN3 oaihN oaiN5 oaiN6 oaiN7 oaihN8 oaiN9
 
-pojs = poj_tl('oaiN oaiN2 oaiN3 oaihN oaiN5 oaiN6 oaiN7 oaihN8 oaiN9')
 # POJ數字式 轉做 TL數字式: pojs_tls()
+pojs = poj_tl('oaiN oaiN2 oaiN3 oaihN oaiN5 oaiN6 oaiN7 oaihN8 oaiN9')
 print(pojs.pojs_tls())
 # =>    uainn uainn2 uainn3 uainnh uainn5 uainn6 uainn7 uainnh8 uainn9  
 
-tls = poj_tl('uainn uainn2 uainn3 uainnh uainn5 uainn6 uainn7 uainnh8 uainn9')
 # TL數字式 轉做 TL調號式: tls_tlt()
+tls = poj_tl('uainn uainn2 uainn3 uainnh uainn5 uainn6 uainn7 uainnh8 uainn9')
 print(tls.tls_tlt())
 # =>   uainn uáinn uàinn uainnh uâinn uǎinn uāinn ua̍innh ua̋inn
 
-pojt = poj_tl('oaiⁿ oáiⁿ oàiⁿ oaihⁿ oâiⁿ oǎiⁿ oāiⁿ oa̍ihⁿ oăiⁿ')
 # POJ調號式 轉做 TL調號式: pojt_tlt()
+pojt = poj_tl('oaiⁿ oáiⁿ oàiⁿ oaihⁿ oâiⁿ oǎiⁿ oāiⁿ oa̍ihⁿ oăiⁿ')
 print(pojt.pojt_tlt())
 # =>    uainn uáinn uàinn uainnh uâinn uǎinn uāinn ua̍innh ua̋inn
 
-tlt = poj_tl('uainn uáinn uàinn uainnh uâinn uǎinn uāinn ua̍innh ua̋inn')
 # TL調號式 轉做 TL數字式: tlt_tls()
+tlt = poj_tl('uainn uáinn uàinn uainnh uâinn uǎinn uāinn ua̍innh ua̋inn')
 print(tlt.tlt_tls())
 # =>   uainn uainn2 uainn3 uainnh uainn5 uainn6 uainn7 uainnh8 uainn9
 
-tls = poj_tl('uainn uainn2 uainn3 uainnh uainn5 uainn6 uainn7 uainnh8 uainn9')
 # TL數字式 轉做 POJ數字式: tls_pojs()
+tls = poj_tl('uainn uainn2 uainn3 uainnh uainn5 uainn6 uainn7 uainnh8 uainn9')
 print(tls.tls_pojs())
 # =>   oaiN oaiN2 oaiN3 oaihN oaiN5 oaiN6 oaiN7 oaihN8 oaiN9
 
-pojs = poj_tl('oaiN oaiN2 oaiN3 oaihN oaiN5 oaiN6 oaiN7 oaihN8 oaiN9')
 # POJ數字式 轉做 POJ調號式: pojs_pojt()
+pojs = poj_tl('oaiN oaiN2 oaiN3 oaihN oaiN5 oaiN6 oaiN7 oaihN8 oaiN9')
 print(pojs.pojs_pojt())
 # =>    oaiⁿ oáiⁿ oàiⁿ oaihⁿ oâiⁿ oǎiⁿ oāiⁿ oa̍ihⁿ oăiⁿ
 
-tlt = poj_tl('uainn uáinn uàinn uainnh uâinn uǎinn uāinn ua̍innh ua̋inn')
 # TL調號式 轉做 POJ調號式: tlt_pojt()
+tlt = poj_tl('uainn uáinn uàinn uainnh uâinn uǎinn uāinn ua̍innh ua̋inn')
 print(tlt.tlt_pojt())
 # =>   oaiⁿ oáiⁿ oàiⁿ oaihⁿ oâiⁿ oǎiⁿ oāiⁿ oa̍ihⁿ oăiⁿ
 ```
