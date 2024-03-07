@@ -617,4 +617,4 @@ class poj_tl(str):
         
 
 if __name__ == '__main__':
-    print("Run POJ_TL-test.py for testing.")
+    print("Run POJ_TL_test.py for testing.")
